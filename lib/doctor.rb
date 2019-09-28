@@ -9,4 +9,5 @@ class Doctor
     @@all
   end
   def appointments
+    Appointment.all.collect {|appointment| appointment
 end
