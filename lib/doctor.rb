@@ -11,5 +11,6 @@ class Doctor
   def appointments
     Appointment.all.collect {|appointment| appointment.doctor == self}
   end
-    
+    def new_appointment
+      
 end
