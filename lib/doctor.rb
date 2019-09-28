@@ -12,5 +12,7 @@ class Doctor
     Appointment.all.collect {|appointment| appointment.doctor == self}
   end
     def new_appointment
+      Appointment.new(date, patient)
+    end
       
 end
